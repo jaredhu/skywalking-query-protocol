@@ -154,4 +154,7 @@ extend type Query {
     # Read the sampled records
     # TopNCondition#scope is not required.
     readSampledRecords(condition: TopNCondition!, duration: Duration!): [SelectedRecord!]!
+    # Read the sampled records Metric
+    # TopNCondition#scope is not required.
+    readSampledRecordsMetric(condition: TopNCondition!, duration: Duration!): [SelectedRecord!]!
 }
